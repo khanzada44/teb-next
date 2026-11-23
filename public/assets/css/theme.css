@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Colour theme: #248196 (teal), #152339 (navy) and white.
+   Loaded after vendorf730.css and stylef730.css, so it overrides them.
+   ========================================================================== */
+:root {
+  /* the site's two named colours */
+  --color-green: #152339;            /* was #28443f: dark surfaces, footer, headings */
+  --color-yellow: #248196;           /* was #fbf7ba: buttons, accents, highlights */
+  --color-white: #fff;
+  --color-black: #152339;
+
+  /* r, g, b values used as rgba(var(--x), a) */
+  --clr-1: 21, 35, 57;               /* navy (was the dark green) */
+  --clr-2: 36, 129, 150;             /* teal */
+  --clr-3: 234, 245, 248;            /* very light teal for soft backgrounds */
+  --dark-color: 15, 26, 43;          /* deeper navy for the darkest areas */
+  --light-color: 255, 255, 255;      /* white */
+
+  /* Bootstrap defaults that showed through */
+  --bs-primary: #248196;
+  --bs-primary-rgb: 36, 129, 150;
+  --bs-link-color: #248196;
+  --bs-link-color-rgb: 36, 129, 150;
+  --bs-link-hover-color: #152339;
+}
+
+/* button text is always white (the id makes these win over the old !important rules) */
+#smooth-wrapper button:not(.btn-close), #smooth-wrapper .btn, #quote button:not(.btn-close) { color: #fff !important; }
+/* the phone pill next to "Get Started": white with navy text */
+#smooth-wrapper .btn.btn-2 { background: #fff !important; color: #152339 !important; }
+#smooth-wrapper .btn.btn-2:hover { background: #248196 !important; color: #fff !important; }
+#smooth-wrapper button:not(.btn-close):hover, #smooth-wrapper .btn:hover, #quote button:not(.btn-close):hover {
+  background: #152339 !important; color: #fff !important; border-color: #248196 !important;
+}
+#smooth-wrapper .bg-1 button:hover, #smooth-wrapper .bg-d button:hover, #smooth-wrapper footer button:hover,
+#smooth-wrapper .services button:hover, #quote button:not(.btn-close):hover { background: #248196 !important; }
+
+/* text on teal is white, so it stays readable */
+.btn, button, .bg-2, .btn-2, .bg-3 .btn, .banner .bg-1,
+.c-list li:before, .icon, .process .number, .mn-clr { color: #fff !important; }
+.bg-3, .box.bg-3 { color: #fff; }
+.bg-3 h2, .bg-3 h3, .bg-3 h4, .bg-3 p, .bg-3 li { color: #fff; }
+
+/* buttons: teal, navy on hover */
+.btn.active, .btn:hover, button.active, button:hover,
+.content-clmn button:hover, .content-clmn a:hover, button.w-100:hover, .black-btn button:hover {
+  background: #152339 !important;
+  color: #fff !important;
+  border-color: #248196 !important;
+}
+.content-clmn button, .content-clmn a { color: #fff !important; }
+
+/* links and highlights */
+a:hover, a:focus, a.active, a:active { color: #248196 !important; }
+footer a:hover, .bg-d a:hover, .clr-l a:hover, .list-unstyled li a:hover { color: #fff !important; text-decoration: underline; }
+.content-clmn h1 span, .primary-div h2.f-40.clr-2, .primary-div h4, .contant h1, h2 .clr-1 { color: #248196 !important; }
+.bg-2 span { color: #fff !important; }
+
+/* form fields */
+.form-control, input, select, select input,
+.prom-frm-fld .form-control { border: 1px solid rgba(36, 129, 150, .55) !important; background: rgba(255, 255, 255, .08); }
+.form-control:focus, input:focus { border-color: #248196 !important; background: #fff !important; color: #152339 !important; }
+.prom-frm-fld .btn { background: #248196 !important; }
+
+/* timeline + misc colours that were purple */
+.date-list, .date-list .inner-text .date-text { color: #152339; }
+.date-list.active .date-text { color: #248196; }
+.modal-content.lozad.bg-1.clr-l.pp-md-bg { background: #152339 !important; }
+
+/* dark areas */
+footer.bg-d.clr-l { background: #152339 !important; }
+.bg-d, .bg-d select option, .btn-3 { background: #152339; }
+.bg-l.container-fluid.w-xl-90.drop-down-cont.br.lozad { background-color: #fff; }
+.drop-down ul li a:hover { color: #248196 !important; }
+
+/* scrollbar + selection */
+html, body, select { scrollbar-color: #248196 transparent; }
+::selection { color: #fff; background: #248196; }
+
+/* thank-you page (was an inline <style>) */
+section.thankyou-sec { height: 100vh; display: flex; justify-content: center; align-items: center; }
+a.tk-pg { color: #fff !important; background: #248196 !important; padding: 10px 25px; border-radius: 50px; }
+a.tk-pg:hover { background: #152339 !important; }

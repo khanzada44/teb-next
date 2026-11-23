@@ -1,0 +1,16 @@
+{
+  "name": "the-ebook-publisher",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start"
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "nodemailer": "6.10.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  }
+}
